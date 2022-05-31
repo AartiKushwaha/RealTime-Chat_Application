@@ -1,0 +1,23 @@
+{
+  "name": "whats-up",
+  "version": "1.0.0",
+  "description": "A Realtime chat application build using MERN stack",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AartiKushwaha/RealTime-Chat_Application.git"
+  },
+  "keywords": [
+    "mern",
+    "realtime"
+  ],
+  "author": "Aarti Kushwaha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AartiKushwaha/RealTime-Chat_Application/issues"
+  },
+  "homepage": "https://github.com/AartiKushwaha/RealTime-Chat_Application#readme"
+}
