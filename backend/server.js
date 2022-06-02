@@ -4,13 +4,13 @@ const { chats } = require("./data/data");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
 const userRoutes = require("./routes/userRoutes");
+const chatRoutes = require("./routes/chatRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
-
 
 dotenv.config();
 connectDB();
 const app = express();
-app.use(express.json());      //acceting json data from frontend
+app.use(express.json()); //acceting json data from frontend
 
 const PORT = process.env.PORT || 5000;
 
@@ -26,14 +26,13 @@ app.get("/", (req, res) => {
 //   res.send(singleChat);
 // });
 
-app.use('/api/user', userRoutes)
-
+app.use("/api/user", userRoutes);
+app.use("/api/chat", chatRoutes);
 
 // Error Handling middlewares
 app.use(notFound);
 app.use(errorHandler);
 
-
 app.listen(5000, () => {
-    console.log(`Server listening on port ${PORT}...`.yellow.bold);
+  console.log(`Server listening on port ${PORT}...`.yellow.bold);
 });
