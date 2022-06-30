@@ -4,10 +4,10 @@ import { useHistory } from "react-router-dom";
 const ChatContext = createContext();
 
 const ChatProvider = ({ children }) => {
-//   const [selectedChat, setSelectedChat] = useState();
+  const [selectedChat, setSelectedChat] = useState();
   const [user, setUser] = useState();
 //   const [notification, setNotification] = useState([]);
-//   const [chats, setChats] = useState();
+  const [chats, setChats] = useState();
 
   const history = useHistory();
 
@@ -23,6 +23,10 @@ const ChatProvider = ({ children }) => {
       value={{
         user,
         setUser,
+        selectedChat,
+        setSelectedChat,
+        chats,
+        setChats,
       }}
     >
       {children}
