@@ -1,33 +1,20 @@
 {
-  "name": "whats-up",
+  "name": "chatrooms",
   "version": "1.0.0",
-  "description": "A Realtime chat application build using MERN stack",
+  "description": "A simple realtime chat application with rooms",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon backend/server.js"
+    "start": "node server",
+    "dev": "nodemon server"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AartiKushwaha/RealTime-Chat_Application.git"
-  },
-  "keywords": [
-    "mern",
-    "realtime"
-  ],
-  "author": "Aarti Kushwaha",
+  "author": "Ritika Goyal",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AartiKushwaha/RealTime-Chat_Application/issues"
-  },
-  "homepage": "https://github.com/AartiKushwaha/RealTime-Chat_Application#readme",
   "dependencies": {
-    "bcryptjs": "^2.4.3",
-    "colors": "^1.4.0",
-    "dotenv": "^16.0.1",
     "express": "^4.18.1",
-    "express-async-handler": "^1.2.0",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^6.3.5",
+    "moment": "^2.29.3",
+    "socket.io": "^4.5.1"
+  },
+  "devDependencies": {
     "nodemon": "^2.0.16"
   }
 }
